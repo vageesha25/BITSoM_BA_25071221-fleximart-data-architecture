@@ -1,0 +1,11 @@
+Get-ExecutionPolicy : The 'Get-ExecutionPolicy' command was found in 
+the module 'Microsoft.PowerShell.Security', but the module could not be 
+loaded. For more information, run 'Import-Module 
+Microsoft.PowerShell.Security'.
+At line:1 char:1
++ Get-ExecutionPolicy -List
++ ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Get-ExecutionPolicy:Stri 
+   ng) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CouldNotAutoloadMatchingModule
+ 
