@@ -1,0 +1,1 @@
+import{d as o}from"./objectUtil-Z6JRxuBJ.js";const c=/^(\$|_|vm)/i;function s(n,i,...r){const e=o(i);for(const t of Object.keys(n))t.startsWith("$")||t.startsWith("_")||t.match(c)||(e[t]===void 0&&(e[t]=null),r.includes(t)&&(e[t]=n[t]));n.$patch(e)}function f(n){return JSON.parse(JSON.stringify(n,(i,r)=>i.match(c)?null:r))}export{f as c,s as r};

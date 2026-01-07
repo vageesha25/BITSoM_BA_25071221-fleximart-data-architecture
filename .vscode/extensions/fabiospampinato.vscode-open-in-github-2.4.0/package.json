@@ -1,0 +1,181 @@
+{
+	"name": "vscode-open-in-github",
+	"displayName": "Open in GitHub",
+	"publisher": "fabiospampinato",
+	"repository": "github:fabiospampinato/vscode-open-in-github",
+	"description": "Open the current project or file in github.com.",
+	"icon": "resources/logo-128x128.png",
+	"version": "2.4.0",
+	"main": "dist/index.js",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Open in GitHub - Configuration",
+			"properties": {
+				"openInGitHub.github.protocol": {
+					"type": "string",
+					"description": "Custom URL protocol",
+					"default": "https"
+				},
+				"openInGitHub.github.domain": {
+					"type": "string",
+					"description": "Custom GitHub domain",
+					"default": "github.com"
+				},
+				"openInGitHub.remote.name": {
+					"type": "string",
+					"description": "Name of the remote repository",
+					"default": "origin"
+				},
+				"openInGitHub.remote.branch": {
+					"type": "string",
+					"description": "Name of the remote branch",
+					"default": "master"
+				},
+				"openInGitHub.useLocalDomain": {
+					"type": "boolean",
+					"description": "Use the local domain instead of the fixed github domain",
+					"default": true
+				},
+				"openInGitHub.useLocalBranch": {
+					"type": "boolean",
+					"description": "Use the local branch instead of the fixed remote branch",
+					"default": true
+				},
+				"openInGitHub.useLocalRange": {
+					"type": "boolean",
+					"description": "Highlight the local selection range, if there's one",
+					"default": true
+				},
+				"openInGitHub.useLocalLine": {
+					"type": "boolean",
+					"description": "Highlight the local line if there's no selection range",
+					"default": false
+				}
+			}
+		},
+		"commands": [
+			{
+				"command": "openInGitHub.openProject",
+				"title": "Open in GitHub: Project"
+			},
+			{
+				"command": "openInGitHub.openRepository",
+				"title": "Open in GitHub: Repository"
+			},
+			{
+				"command": "openInGitHub.openFile",
+				"title": "Open in GitHub: File"
+			},
+			{
+				"command": "openInGitHub.openFileHistory",
+				"title": "Open in GitHub: File History"
+			},
+			{
+				"command": "openInGitHub.openFileBlame",
+				"title": "Open in GitHub: File Blame"
+			},
+			{
+				"command": "openInGitHub.openFilePermalink",
+				"title": "Open in GitHub: File Permalink"
+			},
+			{
+				"command": "openInGitHub.openIssues",
+				"title": "Open in GitHub: Issues"
+			},
+			{
+				"command": "openInGitHub.openPullRequests",
+				"title": "Open in GitHub: Pull Requests"
+			},
+			{
+				"command": "openInGitHub.openReleases",
+				"title": "Open in GitHub: Releases"
+			},
+			{
+				"command": "openInGitHub.openTags",
+				"title": "Open in GitHub: Tags"
+			},
+			{
+				"command": "openInGitHub.openActions",
+				"title": "Open in GitHub: Actions"
+			},
+			{
+				"command": "openInGitHub.openCommits",
+				"title": "Open in GitHub: Commits"
+			},
+			{
+				"command": "openInGitHub.openDiscussions",
+				"title": "Open in GitHub: Discussions"
+			},
+			{
+				"command": "openInGitHub.openProjects",
+				"title": "Open in GitHub: Projects"
+			},
+			{
+				"command": "openInGitHub.openSecurity",
+				"title": "Open in GitHub: Security"
+			},
+			{
+				"command": "openInGitHub.openInsights",
+				"title": "Open in GitHub: Insights"
+			},
+			{
+				"command": "openInGitHub.openWiki",
+				"title": "Open in GitHub: Wiki"
+			},
+			{
+				"command": "openInGitHub.openSettings",
+				"title": "Open in GitHub: Settings"
+			},
+			{
+				"command": "openInGitHub.copyFileLink",
+				"title": "Open in GitHub: Copy File Link"
+			},
+			{
+				"command": "openInGitHub.copyFilePermalink",
+				"title": "Open in GitHub: Copy File Permalink"
+			}
+		]
+	},
+	"scripts": {
+		"bundle:dev": "tsex bundle --external vscode --format cjs --platform node --no-declare",
+		"bundle:prod": "tsex bundle --external vscode --format cjs --platform node --minify",
+		"clean": "tsex clean",
+		"compile": "tsex compile",
+		"debug": "code --extensionDevelopmentPath $PWD --inspect-extensions 9222",
+		"package": "vsce package",
+		"prepublishOnly": "scex -bs clean bundle:prod",
+		"vscode:prepublish": "scex -bs clean bundle:prod",
+		"dev": "scex -bs bundle:dev debug",
+		"prod": "scex -bs bundle:prod debug"
+	},
+	"categories": [
+		"Other"
+	],
+	"engines": {
+		"vscode": "^1.87.0"
+	},
+	"keywords": [
+		"vscode",
+		"extension",
+		"open",
+		"in",
+		"github"
+	],
+	"dependencies": {
+		"vscode-extras": "^1.6.1"
+	},
+	"devDependencies": {
+		"@types/node": "^18.19.23",
+		"@types/vscode": "^1.87.0",
+		"esbuild": "0.20.1",
+		"scex": "^1.1.0",
+		"tsex": "^3.2.0",
+		"typescript": "^5.4.2"
+	},
+	"__metadata": {
+		"installedTimestamp": 1767098187869,
+		"targetPlatform": "undefined",
+		"size": 33098
+	}
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "product_id": "ELEC001",
+    "name": "Samsung Galaxy S21",
+    "category": "Electronics",
+    "price": 79999,
+    "stock": 150,
+    "specs": { "ram": "8GB", "storage": "128GB" },
+    "reviews": [
+      { "user": "U001", "rating": 5, "comment": "Great!", "date": "2024-01-15" }
+    ]
+  },
+  {
+    "product_id": "ELEC002",
+    "name": "Dell Laptop",
+    "category": "Electronics",
+    "price": 65000,
+    "stock": 60,
+    "specs": { "ram": "16GB", "storage": "512GB" },
+    "reviews": [
+      { "user": "U002", "rating": 4, "comment": "Good performance", "date": "2024-01-20" }
+    ]
+  },
+  {
+    "product_id": "ELEC003",
+    "name": "Bluetooth Headphones",
+    "category": "Electronics",
+    "price": 3000,
+    "stock": 200,
+    "specs": { "type": "Over-Ear" },
+    "reviews": [
+      { "user": "U003", "rating": 3, "comment": "Average", "date": "2024-02-01" }
+    ]
+  },
+  {
+    "product_id": "FASH001",
+    "name": "Running Shoes",
+    "category": "Fashion",
+    "price": 4500,
+    "stock": 80,
+    "specs": { "size": "9", "color": "Black" },
+    "reviews": [
+      { "user": "U004", "rating": 5, "comment": "Very comfortable", "date": "2024-01-18" }
+    ]
+  },
+  {
+    "product_id": "FASH002",
+    "name": "Leather Jacket",
+    "category": "Fashion",
+    "price": 12000,
+    "stock": 40,
+    "specs": { "size": "L", "color": "Brown" },
+    "reviews": [
+      { "user": "U005", "rating": 4, "comment": "Stylish", "date": "2024-02-05" }
+    ]
+  }
+]

@@ -1,0 +1,36 @@
+ETL Data Quality Report
+Generated: 2025-12-26T11:52:05.836120
+
+--- Customers ---
+Initial records: 26
+Duplicates removed: 5
+Missing email removed: 0
+Final records: 21
+Loaded to MySQL: 0
+Exported to CSV (fallback): 21
+Inserted to SQLite fallback: 21
+
+--- Products ---
+Initial records: 20
+Duplicates removed: 0
+Missing price removed: 3
+Stock quantity filled: 0
+Final records: 17
+Loaded to MySQL: 0
+Exported to CSV (fallback): 17
+Inserted to SQLite fallback: 17
+
+--- Sales ---
+Initial records: 41
+Duplicates removed: 1
+Missing customer_id_missing removed: 0
+Final records: 30
+Loaded to MySQL: 0
+Exported to CSV (fallback): 30
+Inserted to SQLite fallback: 30
+
+--- Summary ---
+Total records processed: 87
+Total loaded to MySQL: 0
+Total exported to CSV: 68
+Total inserted to SQLite: 68
